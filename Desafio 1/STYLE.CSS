@@ -1,0 +1,32 @@
+button:hover {
+    color:red
+}
+body.home{
+    padding: 0;
+    margin: 10 auto;
+    width: 80%;
+    border: 1px solid rgb(57, 51, 138);
+
+    background-image: 
+    url(imagens/fundo.png)repeat-x;
+}
+body.fundo2{
+    padding: 0;
+    margin: 10 auto;
+    width: 700px;
+    border: 1px solid rgb(57, 51, 138);
+}
+header.principal{
+    text-align:right;
+
+
+}
+header.secundaria{
+    text-align:right;
+
+
+}
+h4.final{
+    text-align:center;
+
+}
