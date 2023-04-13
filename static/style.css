@@ -1,0 +1,50 @@
+button:hover {
+    color:red
+}
+
+body#home{
+    border: 0px solid rgb(57, 51, 138);
+    max-width: 850px;
+    padding: 0;
+    margin: 0 auto;
+    background-image: url(imagens/fundo.png)repeat-x;
+}
+
+body#corpo{
+    border: 0px solid rgb(57, 51, 138);
+    max-width: 900px;
+    padding: 0;
+    margin: 0 auto;
+    background-image: url(imagens/fundo2.png);
+}
+
+#logo{
+    position: center;
+    right: 20px;
+    padding-top: 0px;
+}
+
+.atalhos{
+    float: left;
+    padding-top:  30px;
+    
+}    
+
+#capa{
+    position: relative;
+    align-self: center;
+    top: 7px;
+}
+
+h4.final{
+    text-align:center;
+
+}
+
+.cabeçalho{
+    display: flex;
+    margin: 30px 20px 10px 20px;
+    padding: -30px;
+    width: 850px;
+    justify-content: space-between
+}
