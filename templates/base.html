@@ -1,13 +1,17 @@
+{% block conteudo %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Unes</title>
+    <title>Base</title>
+
 </head>
 <link rel="stylesheet" href="../static/css/Normalize.css">
 <link rel="stylesheet" href="../static/css/style.css">
+
+
 <body id="home" background="../static/imagens/fundo.png">
         <div>
             <div class="cabeçalho">
@@ -21,16 +25,14 @@
         
         
 
-            {% block conteudo %}
+{% endblock %}
 
-
-
-            {%endblock%}
-
+{% block final %}
        
-        <div class="rodape">
+        <div>
             <h4 class="final">Todos os direitos reservados</h4>
         </div>
+{% endblock %}
     
 </body>
 </html>

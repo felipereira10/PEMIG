@@ -8,8 +8,8 @@ def home():
 
 @app.route("/quemsomos")          
 def quemsomos():
-    return render_template ("/quem_somos.html")
+    return render_template ("/Quem somos.html")
 
-@app.route("/contatos")          
+@app.route("/contato")          
 def contatos():
-    return render_template ("/contatos.html")
+    return render_template ("/Contato.html")
