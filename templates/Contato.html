@@ -1,26 +1,27 @@
-{% extends 'templates/base.html %}
+{% extends 'base.html' %}
 
-{% load static %}
+{% block conteudo %}
 
-<h1>Entre em contato</h1>
+    <h1>Entre em contato</h1>
 
-    Lorem <strong>ipsum dolor</strong> sit amet consectetur adipisicing elit. Dolorem ab officiis a quo soluta distinctio, eos quaerat molestiae unde iste at incidunt sunt autem numquam quis, itaque aspernatur tempora velit!
-    <hr>
+        Lorem <strong>ipsum dolor</strong> sit amet consectetur adipisicing elit. Dolorem ab officiis a quo soluta distinctio, eos quaerat molestiae unde iste at incidunt sunt autem numquam quis, itaque aspernatur tempora velit!
+        <hr>
 
-    <form>
-        E-mail:<br>
-        <input type="text" name="E-mail" size="30"
-        placeholder="Digite seu e-mail aqui..."><br>
-        <br>
+        <form>
+            E-mail:<br>
+            <input type="text" name="E-mail" size="30"
+            placeholder="Digite seu e-mail aqui..."><br>
+            <br>
 
-        Assunto:<br>
-        <input type="text" name="Assunto" size="40"
-        placeholder="Assunto desejado aqui..."><br>
-        <br>
+            Assunto:<br>
+            <input type="text" name="Assunto" size="40"
+            placeholder="Assunto desejado aqui..."><br>
+            <br>
 
-        Descrição:<br>
-        <textarea name="Descrição" rows="6" cols="40" placeholder="Escreva algo aqui..."></textarea>
-        <br>
+            Descrição:<br>
+            <textarea name="Descrição" rows="6" cols="40" placeholder="Escreva algo aqui..."></textarea>
+            <br>
 
-    <p><button>Enviar</button></p>
-    </form>
+        <p><button>Enviar</button></p>
+        </form>
+{% endblock %}

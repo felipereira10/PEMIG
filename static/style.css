@@ -2,17 +2,17 @@ button:hover {
     color:red
 }
 
-body#home{
+#home{
     border: 0px solid rgb(57, 51, 138);
-    max-width: 850px;
+    max-width: 900px;
     padding: 0;
     margin: 0 auto;
     background-image: url(imagens/fundo.png)repeat-x;
 }
 
-body#corpo{
+#corpo{
     border: 0px solid rgb(57, 51, 138);
-    max-width: 900px;
+    max-width: 100%;
     padding: 0;
     margin: 0 auto;
     background-image: url(imagens/fundo2.png);
@@ -36,7 +36,7 @@ body#corpo{
     top: 7px;
 }
 
-h4.final{
+.final{
     text-align:center;
 
 }
