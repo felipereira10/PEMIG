@@ -3,8 +3,8 @@ from flask import Flask, render_template, request, url_for, jsonify
 from flask_mysqldb import MySQL
 
 
-
 app = Flask(__name__)
+
 
 
 
@@ -12,8 +12,8 @@ app = Flask(__name__)
 # conexão com o banco de dados
 app.config['MYSQL_Host'] = 'localhost'  
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'Pac109081'
-app.config['MYSQL_DB'] = 'contatos'
+app.config['MYSQL_PASSWORD'] = 'fatec'
+app.config['MYSQL_DB'] = 'desafio3'
 
 mysql = MySQL(app)
 
@@ -24,12 +24,12 @@ def home():
     return render_template("index.html")
 
 @app.route("/quemsomos")
-def quem_somos():
+def quemsomos():
     return render_template("quemsomos.html")
 
-@app.route("/contatos")
-def contatos():
-    return render_template("contatos.html")
+# @app.route("/contatos")
+# def contatos():
+#     return render_template("contatos.html")
 
 
 
@@ -41,7 +41,7 @@ def contatos():
         descricao = request.form['descricao']
         
         cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO contatos(email, assunto, descricao) VALUES (%s, %s, %s)", (email, assunto, descricao))
+        cur.execute("INSERT INTO desafio3(email, assunto, descricao) VALUES (%s, %s, %s)", (email, assunto, descricao))
        
         mysql.connection.commit()
         
@@ -61,4 +61,4 @@ def users():
     if users > 0:
         userDetails = cur.fetchall()
 
-        return render_template("users.html", userDetails=userDetails)
+        return render_template('users.html', userDetails=userDetails)

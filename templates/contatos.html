@@ -7,21 +7,21 @@
         Lorem <strong>ipsum dolor</strong> sit amet consectetur adipisicing elit. Dolorem ab officiis a quo soluta distinctio, eos quaerat molestiae unde iste at incidunt sunt autem numquam quis, itaque aspernatur tempora velit!
         <hr>
 
-        <form>
+        <form method="post" action="/contatos">
+
             E-mail:<br>
-            <input type="text" name="E-mail" size="30"
-            placeholder="Digite seu e-mail aqui..."><br>
+            <input type="text" name="email" size="30"
+            placeholder="Digite seu e-mail aqui..." required><br>
             <br>
 
             Assunto:<br>
-            <input type="text" name="Assunto" size="40"
-            placeholder="Assunto desejado aqui..."><br>
+            <input type="text" name="assunto" size="40"
+            placeholder="Assunto desejado aqui..." required><br>
             <br>
 
             Descrição:<br>
-            <textarea name="Descrição" rows="6" cols="40" placeholder="Escreva algo aqui..."></textarea>
+            <textarea name="descricao" rows="6" cols="40" placeholder="Escreva algo aqui..." required></textarea>
             <br>
-
             <p><button>Enviar</button></p>
         </form>
 {% endblock %}
