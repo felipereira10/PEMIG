@@ -8,8 +8,6 @@ app = Flask(__name__)
 
 
 
-
-
 # conexão com o banco de dados
 app.config['MYSQL_Host'] = 'localhost'  
 app.config['MYSQL_USER'] = 'root'
